@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tax_report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fd806bb2-c9ec-427c-adc9-86bebce8b954">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="fullName" class="java.lang.String">
+
+	</field>
+	<field name="fiscalNumber" class="java.lang.String">
+
+	</field>
+	<field name="annualIncome" class="java.lang.Double"/>
+	<field name="year" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="34" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="184" splitType="Stretch">
+			<textField>
+				<reportElement x="26" y="20" width="153" height="28" uuid="f8302f6a-9fb0-4542-a4b0-a1f717ab484c"/>
+				<textFieldExpression><![CDATA["Full Name:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="26" y="61" width="153" height="28" uuid="332811e4-d690-4722-9963-9c5c3b46e370"/>
+				<textFieldExpression><![CDATA["Fiscal Number:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="28" y="141" width="153" height="28" uuid="fb8664a6-457f-4e39-a273-67f4e4788b0f"/>
+				<textFieldExpression><![CDATA["Year:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="28" y="100" width="153" height="28" uuid="67d8f232-1f15-429f-8af6-dc3adaace69d"/>
+				<textFieldExpression><![CDATA["Annual Income:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="21" width="153" height="28" uuid="a09e67aa-ce4f-4f6c-8b9f-d12d06f9e801"/>
+				<textFieldExpression><![CDATA[$F{fullName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="62" width="153" height="28" uuid="3d4c2a49-759f-4ae2-99e0-92da21d12461"/>
+				<textFieldExpression><![CDATA[$F{fiscalNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="101" width="153" height="28" uuid="7224a4b1-04f5-4121-8b0f-aab2b29730c8"/>
+				<textFieldExpression><![CDATA[$F{annualIncome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="142" width="153" height="28" uuid="3b6f8d9e-67a2-4274-8c8c-83cfb86671e2"/>
+				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<header th:fragment="header" class="navbar navbar-expand-lg navbar-dark bg-dark mb-4 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">SURF - DGFiP</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" th:href="@{/greetings}">Recherche</a></li>
+        <li class="nav-item"><a class="nav-link" th:href="@{/consultation}">Consultation</a></li>
+      </ul>
+      <span class="navbar-text">Utilisateur: <strong class="text-white">Admin</strong></span>
+    </div>
+  </div>
+</header>
+
+<footer th:fragment="footer" class="py-3 bg-light border-top mt-auto">
+  <div class="container text-center">
+    <small class="text-muted">© 2026 Direction Générale des Finances Publiques - Application SURF</small>
+  </div>
+</footer>
+
+</body>
+</html>
